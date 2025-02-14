@@ -1,0 +1,47 @@
+{% load static %}
+<div class = "card">
+    <div clas = "card_header">
+        <img src="https://dummyimage.com/32x32" alt="프로필이미지">
+        <a href="#">
+            <span class="card_user-name">likelion.official</span>
+        </a>
+    </div>
+    <div clas = "card_body">
+        <div>
+            <img class = "card_image" src="https://dummyimage.com/600x600" alt="">
+        </div>
+        <div class="card__btn-group">
+            <div>
+                <img  class="card__btn" src="{% static 'icons/favorite_36dp.svg'%}" alt="좋아요">
+                <img  class="card__btn" src="{% static 'icons/mode_comment_36dp.svg'%}" alt="댓글">
+                <img  class="card__btn" src="{% static 'icons/send_36dp.svg'%}" alt="공유">
+            </div>
+            <div>
+                <img  class="card__btn" src="{% static 'icons/bookmark_36dp.svg'%}" alt="북마크">
+            </div>
+
+        </div>
+        <div class="card_content">
+            <span class="card__like-num">좋아요 00개</span>
+            <div class="card_main-text">
+                <p>
+                    <span class="card__user-name">
+                        likelion.official
+                    </span> {{"실무와 현업에서 필요로 하는 백엔드 개발자로의 역량 배양에 효과적"|truncatechars:35}}
+                </p>
+            </div>
+            <div>
+                <p>댓글 0개 모두보기</p>
+                <ul clas="card__comment-group">
+                    <li>
+                        <p>
+                            <span class="card__user-name">likelion.official</span>
+                            댓글 내용...
+                        </p>
+                    </li>
+                </ul>
+                <p class="card__created-at">2025년 2월 7일</p>
+            </div>
+        </div>
+    </div>
+</div>
